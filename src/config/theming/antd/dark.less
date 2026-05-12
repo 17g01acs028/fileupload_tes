@@ -1,0 +1,27 @@
+/* stylelint-disable */
+/* prettier-ignore */
+@plugin
+(
+{
+"wrappers"
+:
+[
+"[data-kit-theme=\"dark\"]"
+]
+}
+)
+'AntdThemeLoader'
+;
+/* stylelint-enable */
+
+[data-kit-theme="dark"] {
+  @import "../../../../node_modules/antd/lib/style/dark";
+  @import "../../../../node_modules/antd/lib/style/components";
+  @import "variables";
+
+  // @import "../styles/_custom-variables.scss"; // <-- SASS in a LESS file!
+
+  @primary-color: @app-primary-color;
+  @info-color: #1890ff;
+  @font-family: @app-font-family
+}

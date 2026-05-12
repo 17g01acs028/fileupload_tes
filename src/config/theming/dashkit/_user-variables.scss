@@ -1,0 +1,110 @@
+//
+// user-variables.scss
+// Use this to overwrite Bootstrap and theme variables
+//
+
+// Example of a variable override to change theme's background color
+// Remove the "//" to comment it in and see it in action!
+// $body-bg: #12263F;
+
+$path-to-fonts: '/src/assets/fonts';
+$path-to-img: '/src/assets/img';
+
+// $primary: #49aa32;
+$primary: #408c0b;
+$secondary: #e19635;
+$success: #007e33;
+$danger: #dd4b39;
+$warning: #ffab00;
+$info: #0065ff;
+$auth-bg: #f1f3ed;
+$body-bg: #f1f3ed;
+$sidebar-color: #354c4f;
+$navbar-items-color: #fbfafa;
+$navbar-top-color: #65971a;
+$navbar-active-color: #cb8827;
+
+// $text-muted: $secondary;
+
+$card-border-radius: 0.25rem;
+
+button > img,
+svg {
+  vertical-align: unset !important;
+}
+
+$navbar-light-bg: $sidebar-color !default;
+$navbar-light-border-color: transparent !default;
+$navbar-light-heading-color: white !default;
+$navbar-light-divider-color: white !default;
+$navbar-light-brand-filter: none;
+
+$navbar-light-color: $navbar-items-color !default;
+$navbar-light-hover-color: fade-out($navbar-active-color, 0.3) !default;
+$navbar-light-active-color: $navbar-active-color !default;
+$navbar-light-toggler-border-color: transparent !default;
+
+$border-color: #9eb6b5 !default;
+$table-border-color: $border-color;
+$card-border-color: $border-color;
+$list-group-border-color: $border-color;
+
+.navbar-secondary {
+  background-color: $navbar-top-color;
+  border-color: transparent;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  // font-weight: 600;
+  background: darken($sidebar-color, 6) !important;
+  color: $navbar-active-color !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active:before {
+  border-left: 2px solid $navbar-active-color !important;
+}
+
+.main-content {
+  background: $body-bg;
+}
+
+.border-bottom {
+  border-color: $border-color;
+}
+
+.navbar-light .navbar-divider {
+  background-color: $border-color;
+}
+
+.text-secondary-700 {
+  color: #86550e !important;
+}
+
+.text-success {
+  color: $success;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.header-pretitle {
+  font-weight: bold !important;
+  font-size: 12px;
+}
+
+.navbar-vertical .navbar-heading {
+  font-size: 11px !important;
+  font-weight: bold !important;
+}
+
+.navbar-light .navbar-heading {
+  color: $secondary !important;
+}
+

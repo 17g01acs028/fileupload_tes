@@ -1,0 +1,42 @@
+//
+// user-variables.scss
+// Use this to overwrite Bootstrap and theme variables
+//
+
+// Example of a variable override to change theme's background color
+// Remove the "//" to comment it in and see it in action!
+// $body-bg: #12263F;
+
+// $app-primary-color: #ff6000;
+$app-primary-color: #00b92f;
+$app-secondary-color: #0d1a38;
+// $app-font-family: 'IBM Plex Sans';
+$app-font-family: 'Goldman Sans';
+$white: #fff;
+$black: #000;
+
+// Border color
+$border-color-base: #c3d1de; // base border outline a component
+
+$border-radius-base: 2px;
+$border-radius-sm: $border-radius-base;
+
+// Outline
+$outline-blur-size: 0;
+$outline-width: 0;
+$outline-color: $app-primary-color;
+$outline-fade: 20%;
+
+// height rules
+$height-base: 32px;
+$height-lg: 40px;
+$height-sm: 24px;
+
+// Button
+$btn-font-weight: 500;
+$btn-border-radius-base: 4px;
+$btn-border-radius-sm: 3px;
+
+// Input
+// ---
+$input-border-color: $border-color-base;
